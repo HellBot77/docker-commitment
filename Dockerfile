@@ -11,5 +11,5 @@ FROM python:alpine
 WORKDIR /commitment
 COPY --from=base /git/commitment .
 RUN pip install --no-cache-dir -r requirements.txt
-CMD [ "python3", "commit.py" ]
 EXPOSE 5000
+CMD [ "python3", "commit.py" ]
